@@ -5,7 +5,7 @@ interface LogoProps {
   /** 'icon' = icon only | 'mark' = icon + wordmark (default) | 'tagline' = icon + wordmark + tagline */
   variant?: 'icon' | 'mark' | 'tagline'
   /** Controls the icon size (height). Width scales proportionally. */
-  size?: 'sm' | 'md' | 'lg'
+  size?: 'sm' | 'md' | 'lg' | 'xl' | '2xl'
   className?: string
   /** When true, renders the wordmark text in a single-line compact form */
   compact?: boolean
@@ -20,6 +20,8 @@ const sizes = {
   sm: { icon: 26, logoH: 30, logoW: Math.round(30 * LOGO_RATIO), wordH: 17, gapX: 9,  gapY: 2 },
   md: { icon: 30, logoH: 38, logoW: Math.round(38 * LOGO_RATIO), wordH: 20, gapX: 10, gapY: 3 },
   lg: { icon: 34, logoH: 46, logoW: Math.round(46 * LOGO_RATIO), wordH: 22, gapX: 11, gapY: 3 },
+  xl: { icon: 40, logoH: 54, logoW: Math.round(54 * LOGO_RATIO), wordH: 24, gapX: 12, gapY: 4 },
+  '2xl': { icon: 50, logoH: 62, logoW: Math.round(62 * LOGO_RATIO), wordH: 26, gapX: 13, gapY: 5 },
 }
 
 export function Logo({ variant = 'mark', size = 'md', className, compact = false }: LogoProps) {
@@ -79,9 +81,9 @@ export function Logo({ variant = 'mark', size = 'md', className, compact = false
         <span className="inline-flex flex-col justify-center" style={{ gap: s.gapY }}>
           {wordmark}
           <span
-            className="hidden pt-1 text-foreground min-[480px]:inline-block whitespace-nowrap leading-none font-medium select-none text-[12px] lg:text-[13px]"
+            className="hidden pt-1 text-foreground min-[480px]:inline-block whitespace-nowrap leading-none font-medium select-none text-[13px] lg:text-[14px]"
           >
-            Build. <span style={{ color: '#2563EB' }}>Automate.</span> Scale.
+            Build. <span className='text-primary'>Automate.</span> Scale.
           </span>
         </span>
       </span>
