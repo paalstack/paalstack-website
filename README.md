@@ -109,6 +109,35 @@ pnpm lint
 pnpm typecheck
 ```
 
+## Database Setup (Supabase)
+
+The contact form stores submissions in a `leads` table. The migration file is at `supabase/migrations/20260625000000_create_leads_table.sql`.
+
+### Apply the migration
+
+**First time setup — link your project:**
+
+```bash
+npx supabase login
+npx supabase link --project-ref <your-project-ref>
+```
+
+**Push migrations to the database:**
+
+```bash
+npx supabase db push
+```
+
+> Your project ref is the ID in your Supabase dashboard URL: `https://supabase.com/dashboard/project/<project-ref>`
+
+### What gets created
+
+| Table | Description |
+|---|---|
+| `public.leads` | Stores contact form submissions (name, email, subject, message) |
+
+Row Level Security (RLS) is enabled on the table. The API route uses the service-role key server-side, so inserts work without exposing credentials to the browser.
+
 ## Links
 
 - **Live site:** [paalstack.com](https://paalstack.com)

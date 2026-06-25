@@ -42,3 +42,13 @@ yarn-error.log*
 next-env.d.ts
 
 .cache/
+
+# temp / scratch files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+/tmp/
+/temp/

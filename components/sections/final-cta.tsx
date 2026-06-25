@@ -199,7 +199,9 @@ export function FinalCTA() {
               </div>
 
               {formState === 'error' && (
-                <p className="text-sm text-destructive">{errorMessage}</p>
+                <div className="rounded-md border border-destructive/30 bg-destructive/10 px-4 py-3 text-sm text-destructive">
+                  {errorMessage}
+                </div>
               )}
 
               <Button

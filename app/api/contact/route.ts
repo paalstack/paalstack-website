@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server'
 
 const schema = z.object({
   name: z.string().min(2).max(100),
-  email: z.string().email(),
+  email: z.email().transform((val) => val.toLowerCase()),
   subject: z.string().min(2).max(200),
   message: z.string().min(10).max(2000),
 })
@@ -33,12 +33,18 @@ export async function POST(request: Request) {
     const { error } = await supabase.from('leads').insert([{ name, email, subject, message }])
 
     if (error) {
-      // Gracefully handle missing table or other DB errors
       console.error('Supabase insert error:', error.message)
+      return NextResponse.json(
+        { error: 'Failed to save your message. Please try again or email us directly at hello@paalstack.com.' },
+        { status: 500 }
+      )
     }
   } catch (err) {
-    // Non-fatal: log but still return success to the user
     console.error('Contact form DB error:', err)
+    return NextResponse.json(
+      { error: 'An unexpected error occurred. Please try again or email us directly at hello@paalstack.com.' },
+      { status: 500 }
+    )
   }
 
   return NextResponse.json({ success: true }, { status: 200 })
