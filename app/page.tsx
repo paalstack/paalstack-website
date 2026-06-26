@@ -7,7 +7,7 @@ import { Process } from '@/components/sections/process'
 import { Services } from '@/components/sections/services'
 import { Technology } from '@/components/sections/technology'
 import { WhyPaalStack } from '@/components/sections/why-paalstack'
-// import { Testimonials } from '@/components/sections/testimonials'
+import { Testimonials } from '@/components/sections/testimonials'
 import { FAQ } from '@/components/sections/faq'
 import { FinalCTA } from '@/components/sections/final-cta'
 
@@ -23,7 +23,7 @@ export default function HomePage() {
         <Process />
         <Technology />
         <WhyPaalStack />
-        {/* <Testimonials /> */}
+        <Testimonials />
         <FAQ />
         <FinalCTA />
       </main>

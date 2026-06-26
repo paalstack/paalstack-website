@@ -10,6 +10,7 @@ import {
   SiSupabase,
   SiTailwindcss,
   SiVercel,
+  SiFramer,
 } from 'react-icons/si'
 import type { IconType } from 'react-icons'
 import type { LucideIcon } from 'lucide-react'
@@ -26,6 +27,7 @@ const technologies: { name: string; category: string; accent: string; Icon: Tech
   { name: 'Tailwind CSS', category: 'Styling',         accent: '#06b6d4', Icon: SiTailwindcss },
   { name: 'shadcn/ui',    category: 'Components',      accent: '#ffffff', Icon: Layers        },
   { name: 'Vercel',       category: 'Deployment',      accent: '#ffffff', Icon: SiVercel      },
+  { name: 'Framer Motion', category: 'Animation',      accent: '#0055ff', Icon: SiFramer      },
 ]
 
 const springConfig = { stiffness: 350, damping: 28 }
@@ -127,7 +129,7 @@ export function Technology() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.5 }}
         >
-          <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent">Our Stack</p>
+          <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent-foreground/50">Our Stack</p>
           <h2 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">Built on Modern Infrastructure</h2>
           <p className="mx-auto max-w-xl text-muted-foreground">
             Carefully selected technologies that deliver performance, developer velocity, and long-term maintainability.

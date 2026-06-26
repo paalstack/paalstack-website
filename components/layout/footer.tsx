@@ -23,8 +23,7 @@ export function Footer() {
               <Logo size="md" variant='tagline' />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              A software engineering studio specializing in AI-powered applications, automation platforms, and scalable
-              SaaS products.
+              An AI-first software engineering company building intelligent applications, automation platforms, and scalable SaaS products.
             </p>
           </div>
 

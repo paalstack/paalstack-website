@@ -1,5 +1,6 @@
 'use client'
 import { motion, useReducedMotion } from 'framer-motion'
+import { CheckCircle2, Clock, ShieldCheck } from 'lucide-react'
 import { InfrastructureGrid } from '@/components/animations/infrastructure-grid'
 import { Button } from '@/components/ui/button'
 import { wordReveal, staggerContainer, fadeUp } from '@/lib/animations'
@@ -39,7 +40,7 @@ export function Hero() {
           transition={{ duration: 0.5 }}
           className="mb-8 inline-flex items-center rounded-full border border-ps-cyan/30 bg-ps-cyan/10 px-4 py-1.5 text-sm text-ps-cyan"
         >
-          Software Engineering &amp; AI
+          AI-First Software Engineering
         </motion.div>
 
         {/* Headline */}
@@ -111,10 +112,19 @@ export function Hero() {
           transition={{ delay: 0.9 }}
           className="flex flex-col items-center gap-2"
         >
-          <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-muted-foreground">
-            <span>✦ Free project estimate</span>
-            <span>✦ 24-hour response</span>
-            <span>✦ No lock-in contracts</span>
+          <div className="flex flex-wrap items-center justify-center gap-5 text-xs text-muted-foreground">
+            <span className="flex items-center gap-1.5">
+              <CheckCircle2 size={13} className="text-ps-cyan shrink-0" />
+              Free project estimate
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Clock size={13} className="text-ps-cyan shrink-0" />
+              24-hour response
+            </span>
+            <span className="flex items-center gap-1.5">
+              <ShieldCheck size={13} className="text-ps-cyan shrink-0" />
+              No lock-in contracts
+            </span>
           </div>
         </motion.div>
       </div>

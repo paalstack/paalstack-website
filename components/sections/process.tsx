@@ -44,7 +44,7 @@ export function Process() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.5 }}
         >
-          <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent">How We Work</p>
+          <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent-foreground/50">How We Work</p>
           <h2 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">From Idea to Production</h2>
           <p className="mx-auto max-w-xl text-muted-foreground">
             A structured, transparent process that turns complex requirements into production-grade software.

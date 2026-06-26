@@ -12,7 +12,7 @@ const navLinks = [
   { label: 'Process', href: '#process' },
   { label: 'Technology', href: '#technology' },
   { label: 'About', href: '#about' },
-] 
+]
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -39,10 +39,10 @@ export function Navbar() {
         isScrolled ? 'backdrop-blur-md bg-background/80 border-b border-border/50' : ''
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-1 lg:px-8">
         {/* Logo */}
         <a href="/" aria-label="PaalStack home" target='_blank'>
-          <Logo size="2xl" variant='mark' />
+          <Logo size="2xl" variant="mark" />
         </a>
 
         {/* Desktop nav */}
@@ -52,7 +52,7 @@ export function Navbar() {
               <a
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                className="text-sm text-muted-foreground transition-colors duration-150 hover:text-foreground cursor-pointer"
               >
                 {link.label}
               </a>
@@ -75,7 +75,7 @@ export function Navbar() {
         <div className="flex items-center gap-2 md:hidden">
           <ThemeToggle />
           <button
-            className="flex h-9 w-9 items-center justify-center text-foreground"
+            className="flex h-9 w-9 items-center justify-center text-foreground cursor-pointer"
             onClick={() => setMobileOpen((prev) => !prev)}
             aria-label="Toggle menu"
           >
@@ -88,11 +88,11 @@ export function Navbar() {
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.2 }}
-            className="md:hidden border-t border-border/50 bg-background/95 backdrop-blur-md px-6 pb-6 pt-4"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.2, ease: 'easeInOut' }}
+            className="overflow-hidden md:hidden border-t border-border/50 bg-background/95 backdrop-blur-md px-6 pb-6 pt-4"
           >
             <ul className="flex flex-col gap-4">
               {navLinks.map((link) => (
@@ -100,7 +100,7 @@ export function Navbar() {
                   <a
                     href={link.href}
                     onClick={(e) => handleNavClick(e, link.href)}
-                    className="block text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    className="block text-sm text-muted-foreground transition-colors hover:text-foreground cursor-pointer"
                   >
                     {link.label}
                   </a>

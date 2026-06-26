@@ -7,7 +7,7 @@ export function Projects() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16 text-center">
-          <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent">Featured Work</p>
+          <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent-foreground/50">Featured Work</p>
           <h2 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">Systems Built to Scale</h2>
           <p className="mx-auto max-w-2xl text-muted-foreground">
             Real applications engineered for production — AI-powered platforms, automation tools, and SaaS products

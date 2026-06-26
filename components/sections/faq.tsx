@@ -54,7 +54,7 @@ export function FAQ() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.5 }}
         >
-          <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent">Common Questions</p>
+          <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent-foreground/50">Common Questions</p>
           <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Answers Before You Ask</h2>
         </motion.div>
 

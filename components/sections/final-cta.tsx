@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
+import { CheckCircle2, Clock, ShieldCheck } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -101,15 +102,24 @@ export function FinalCTA() {
           whileInView="visible"
           viewport={{ once: true, margin: '-80px' }}
         >
-          <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent">Start Your Project</p>
+          <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent-foreground/50">Start Your Project</p>
           <h2 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">Let&apos;s Build Something That Lasts</h2>
           <p className="mx-auto max-w-lg text-muted-foreground">
             Tell us about your project. We&apos;ll respond within 24 hours with a free consultation and no-pressure estimate.
           </p>
           <div className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-muted-foreground/60">
-            <span>✦ Free project estimate</span>
-            <span>✦ Response within 24 hours</span>
-            <span>✦ No lock-in contracts</span>
+            <span className="flex items-center gap-1.5">
+              <CheckCircle2 size={12} className="text-ps-cyan shrink-0" />
+              Free project estimate
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Clock size={12} className="text-ps-cyan shrink-0" />
+              Response within 24 hours
+            </span>
+            <span className="flex items-center gap-1.5">
+              <ShieldCheck size={12} className="text-ps-cyan shrink-0" />
+              No lock-in contracts
+            </span>
           </div>
         </motion.div>
 

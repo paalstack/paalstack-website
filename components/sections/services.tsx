@@ -76,7 +76,7 @@ function ServiceCard({
       variants={shouldReduceMotion ? undefined : fadeUp}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="group relative overflow-hidden rounded-lg border border-border bg-card p-6"
+      className="group relative overflow-hidden rounded-lg border border-border bg-card p-6 transition-colors duration-200 hover:border-primary/30 cursor-pointer"
     >
       {/* Cursor spotlight */}
       {!shouldReduceMotion && (
@@ -115,7 +115,7 @@ export function Services() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.5 }}
         >
-          <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent">What We Do</p>
+          <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent-foreground/50">What We Do</p>
           <h2 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">End-to-End Engineering</h2>
           <p className="mx-auto max-w-xl text-muted-foreground">
             From initial architecture to production deployment, we handle every layer of your product.
