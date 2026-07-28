@@ -33,14 +33,14 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-5xl px-6 py-32 text-center lg:px-8">
         {/* Eyebrow badge */}
-        <motion.div
-          initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="mb-8 inline-flex items-center rounded-full border border-ps-cyan/30 bg-ps-cyan/10 px-4 py-1.5 text-sm text-ps-cyan"
-        >
-          Software Engineering &amp; AI
-        </motion.div>
+                <motion.div
+                  initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="mb-8 inline-flex items-center rounded-full border border-ps-cyan/30 bg-ps-cyan/10 px-4 py-1.5 text-sm text-ps-cyan"
+                >
+                  Growing AI-first software engineering company
+                </motion.div>
 
         {/* Headline */}
         <motion.h1
@@ -75,7 +75,9 @@ export function Hero() {
           transition={{ delay: 0.6 }}
           className="mx-auto mb-10 max-w-2xl text-lg text-muted-foreground md:text-xl"
         >
-          AI-powered applications, automation platforms, and scalable SaaS products — engineered to ship in weeks, not months.
+          Growing AI-first software engineering company — expert React/Next.js/TypeScript foundation, actively expanding AI
+          agent & workflow automation capability. Custom web apps, SaaS MVPs, internal tools, and AI automation for
+          startups and small businesses.
         </motion.p>
 
         {/* CTA buttons */}

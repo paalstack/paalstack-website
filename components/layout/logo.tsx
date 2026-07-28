@@ -81,7 +81,7 @@ export function Logo({ variant = 'mark', size = 'md', className, compact = false
           <span
             className="hidden pt-1 text-foreground min-[480px]:inline-block whitespace-nowrap leading-none font-medium select-none text-[12px] lg:text-[13px]"
           >
-            Build. <span style={{ color: '#2563EB' }}>Automate.</span> Scale.
+            Growing AI-first software engineering company
           </span>
         </span>
       </span>

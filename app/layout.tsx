@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 export const metadata: Metadata = {
   title: 'PaalStack — Build. Automate. Scale.',
   description:
-    'PaalStack is a software engineering studio specializing in AI-powered applications, automation platforms, and scalable SaaS products built with Next.js, TypeScript, and Supabase.',
-  keywords: ['software engineering', 'AI agents', 'Next.js', 'SaaS development', 'automation', 'TypeScript', 'Supabase'],
+    'Growing AI-first software engineering company — expert React/Next.js/TypeScript foundation, actively expanding AI agent & workflow automation capability. Custom web apps, SaaS MVPs, internal tools, and AI automation for startups and small businesses.',
+  keywords: ['AI-first software engineering', 'React development', 'Next.js development', 'TypeScript', 'AI agents', 'workflow automation', 'SaaS MVP development', 'custom web apps', 'internal tools'],
   authors: [{ name: 'PaalStack' }],
   creator: 'PaalStack',
   openGraph: {
@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     siteName: 'PaalStack',
     title: 'PaalStack — Build. Automate. Scale.',
     description:
-      'Software engineering studio specializing in AI-powered applications, automation platforms, and scalable SaaS products.',
+      'Growing AI-first software engineering company — expert React/Next.js/TypeScript foundation, actively expanding AI agent & workflow automation capability.',
     images: [{ url: 'https://paalstack.com/opengraph-image', width: 1200, height: 630, alt: 'PaalStack' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'PaalStack — Build. Automate. Scale.',
-    description: 'Software engineering studio specializing in AI-powered applications, automation, and SaaS.',
+    description: 'Growing AI-first software engineering company — expert React/Next.js/TypeScript foundation, actively expanding AI agent & workflow automation capability.',
     images: ['https://paalstack.com/opengraph-image'],
     creator: '@paalstack',
   },
@@ -118,7 +118,7 @@ const organizationSchema = {
   url: 'https://paalstack.com',
   logo: 'https://paalstack.com/logo.png',
   description:
-    'Software engineering studio specializing in AI-powered applications, automation platforms, and scalable SaaS products.',
+    'Growing AI-first software engineering company — expert React/Next.js/TypeScript foundation, actively expanding AI agent & workflow automation capability. Custom web apps, SaaS MVPs, internal tools, and AI automation for startups and small businesses.',
   email: 'hello@paalstack.com',
   sameAs: ['https://github.com/paalstack', 'https://twitter.com/paalstack'],
 }
