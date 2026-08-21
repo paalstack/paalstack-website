@@ -2,7 +2,7 @@ const pillars = [
   {
     title: 'Modern Architecture',
     description:
-      'Every project is built on proven, scalable patterns — not hacked-together shortcuts. We use type-safe, maintainable code that teams can build on for years.',
+      'Every project is built on proven, scalable patterns - not hacked-together shortcuts. We use type-safe, maintainable code that teams can build on for years.',
   },
   {
     title: 'AI Expertise',
@@ -22,7 +22,7 @@ const pillars = [
   {
     title: 'Long-Term Partnership',
     description:
-      'We invest in understanding your business deeply. Our goal is to be the engineering partner you call first — not just a vendor you hand specs to.',
+      'We invest in understanding your business deeply. Our goal is to be the engineering partner you call first - not just a vendor you hand specs to.',
   },
 ]
 
@@ -35,7 +35,7 @@ export function WhyPaalStack() {
           <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent">Why PaalStack</p>
           <h2 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">Engineering You Can Rely On</h2>
           <p className="mx-auto max-w-xl text-muted-foreground">
-            We combine technical depth with business understanding to deliver software that works — and keeps working.
+            We combine technical depth with business understanding to deliver software that works - and keeps working.
           </p>
         </div>
 

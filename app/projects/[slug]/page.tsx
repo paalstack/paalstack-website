@@ -17,10 +17,10 @@ export async function generateMetadata({
   const project = getProject(slug)
   if (!project) return {}
   return {
-    title: `${project.name} — PaalStack`,
+    title: `${project.name} - PaalStack`,
     description: project.description,
     openGraph: {
-      title: `${project.name} — PaalStack`,
+      title: `${project.name} - PaalStack`,
       description: project.description,
     },
   }

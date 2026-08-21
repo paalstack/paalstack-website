@@ -1,6 +1,6 @@
 # PaalStack Website
 
-The official marketing and portfolio site for **PaalStack** — a modern web development consultancy. Built with Next.js 16, React 19, Tailwind CSS v4, and Supabase.
+The official marketing and portfolio site for **PaalStack** - a modern web development consultancy. Built with Next.js 16, React 19, Tailwind CSS v4, and Supabase.
 
 ## Tech Stack
 
@@ -55,15 +55,15 @@ paalstack-website/
 
 The home page (`app/page.tsx`) renders the following sections in order:
 
-1. **Hero** — headline, CTA buttons
-2. **Stats** — key numbers / social proof
-3. **Projects** — featured portfolio work
-4. **Services** — service offerings
-5. **Process** — how we work
-6. **Technology** — tech stack showcase
-7. **Why PaalStack** — differentiators
-8. **FAQ** — common questions
-9. **Final CTA** — conversion call-to-action
+1. **Hero** - headline, CTA buttons
+2. **Stats** - key numbers / social proof
+3. **Projects** - featured portfolio work
+4. **Services** - service offerings
+5. **Process** - how we work
+6. **Technology** - tech stack showcase
+7. **Why PaalStack** - differentiators
+8. **FAQ** - common questions
+9. **Final CTA** - conversion call-to-action
 
 ## Getting Started
 

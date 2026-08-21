@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Projects — PaalStack',
+  title: 'Projects - PaalStack',
   description: 'Explore PaalStack projects: AI platforms, CRM tools, and SaaS starters built with Next.js and Supabase.',
 }
 
@@ -25,7 +25,7 @@ export default function ProjectsPage() {
           <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent">Our Work</p>
           <h1 className="mb-4 text-5xl font-bold tracking-tight">All Projects</h1>
           <p className="max-w-xl text-muted-foreground">
-            Production applications engineered from the ground up — AI platforms, automation tools, and SaaS products
+            Production applications engineered from the ground up - AI platforms, automation tools, and SaaS products
             built for real-world scale.
           </p>
         </div>

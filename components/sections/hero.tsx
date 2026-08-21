@@ -75,7 +75,7 @@ export function Hero() {
           transition={{ delay: 0.6 }}
           className="mx-auto mb-10 max-w-2xl text-lg text-muted-foreground md:text-xl"
         >
-          Growing AI-first software engineering company — expert React/Next.js/TypeScript foundation, actively expanding AI
+          Growing AI-first software engineering company - expert React/Next.js/TypeScript foundation, actively expanding AI
           agent & workflow automation capability. Custom web apps, SaaS MVPs, internal tools, and AI automation for
           startups and small businesses.
         </motion.p>

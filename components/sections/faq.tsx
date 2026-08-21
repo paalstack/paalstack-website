@@ -21,7 +21,7 @@ const faqs = [
   {
     question: 'Can you help launch a SaaS product?',
     answer:
-      'Absolutely. We offer end-to-end SaaS development including authentication, user management, billing integrations, dashboards, and AI features — everything you need to launch and grow.',
+      'Absolutely. We offer end-to-end SaaS development including authentication, user management, billing integrations, dashboards, and AI features - everything you need to launch and grow.',
   },
   {
     question: 'What happens after launch?',
@@ -36,7 +36,7 @@ const faqs = [
   {
     question: 'How do we start?',
     answer:
-      'Book a free consultation via the contact form below. We\'ll discuss your goals, assess the scope, and outline a plan. There\'s no commitment required — just a conversation.',
+      'Book a free consultation via the contact form below. We\'ll discuss your goals, assess the scope, and outline a plan. There\'s no commitment required - just a conversation.',
   },
 ]
 

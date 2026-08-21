@@ -14,7 +14,7 @@ const testimonials = [
   },
   {
     quote:
-      "They didn't just write code — they understood our business. The automation platform they built cut our operations time by 70%. ROI was clear within the first month.",
+      "They didn't just write code - they understood our business. The automation platform they built cut our operations time by 70%. ROI was clear within the first month.",
     author: 'Priya S.',
     role: 'Head of Operations',
     company: 'ScaleOps Inc.',
@@ -49,7 +49,7 @@ export function Testimonials() {
           <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent">What Clients Say</p>
           <h2 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">Proven. Trusted. Delivered.</h2>
           <p className="mx-auto max-w-xl text-muted-foreground">
-            Real outcomes from real partnerships — we measure success by the impact we create for your business.
+            Real outcomes from real partnerships - we measure success by the impact we create for your business.
           </p>
         </motion.div>
 

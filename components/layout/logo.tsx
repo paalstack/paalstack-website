@@ -78,11 +78,6 @@ export function Logo({ variant = 'mark', size = 'md', className, compact = false
         {icon}
         <span className="inline-flex flex-col justify-center" style={{ gap: s.gapY }}>
           {wordmark}
-          <span
-            className="hidden pt-1 text-foreground min-[480px]:inline-block whitespace-nowrap leading-none font-medium select-none text-[12px] lg:text-[13px]"
-          >
-            Growing AI-first software engineering company
-          </span>
         </span>
       </span>
     )

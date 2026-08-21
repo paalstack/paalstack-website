@@ -16,7 +16,7 @@ const steps = [
   {
     number: '03',
     title: 'Build',
-    description: 'Clean, type-safe code with CI/CD from day one — iterating rapidly with continuous feedback.',
+    description: 'Clean, type-safe code with CI/CD from day one - iterating rapidly with continuous feedback.',
   },
   {
     number: '04',
@@ -55,7 +55,7 @@ export function Process() {
         <div className="hidden lg:block">
           <div className="relative flex items-start">
 
-            {/* Static track — from right edge of circle 1 to left edge of circle 5.
+            {/* Static track - from right edge of circle 1 to left edge of circle 5.
                 Each step is flex-1 (20%), so centers sit at 10%,30%,50%,70%,90%.
                 Circle is h-16 (4rem=64px), radius=32px. */}
             <div
@@ -74,7 +74,7 @@ export function Process() {
                 viewport={{ once: true, margin: '-80px' }}
                 transition={{ delay: i * 0.1 }}
               >
-                {/* Number badge — opaque backing discs (match section bg) hide the line behind circle */}
+                {/* Number badge - opaque backing discs (match section bg) hide the line behind circle */}
                 <div className="relative z-10 mb-5 h-16 w-16">
                   <span className="absolute inset-0 rounded-full bg-background" />
                   <span className="absolute inset-0 rounded-full bg-card/40" />

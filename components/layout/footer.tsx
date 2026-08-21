@@ -23,7 +23,7 @@ export function Footer() {
               <Logo size="md" variant='tagline' />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Growing AI-first software engineering company — expert React/Next.js/TypeScript foundation, actively expanding
+              Growing AI-first software engineering company - expert React/Next.js/TypeScript foundation, actively expanding
               AI agent & workflow automation capability. Custom web apps, SaaS MVPs, internal tools, and AI automation for
               startups and small businesses.
             </p>
