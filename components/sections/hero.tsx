@@ -2,23 +2,15 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { InfrastructureGrid } from '@/components/animations/infrastructure-grid'
 import { Button } from '@/components/ui/button'
-import { wordReveal, staggerContainer, fadeUp } from '@/lib/animations'
-
-const headlineLines = [
-  ['Build', 'Software.'],
-  ['Automate', 'Operations.'],
-  ['Scale', 'Faster.'],
-]
+import { fadeUp } from '@/lib/animations'
 
 export function Hero() {
   const shouldReduceMotion = useReducedMotion()
 
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
-      {/* Background grid */}
       <InfrastructureGrid />
 
-      {/* Atmospheric gradient overlays */}
       <div
         className="pointer-events-none absolute inset-0 z-1"
         style={{
@@ -27,73 +19,52 @@ export function Hero() {
         }}
       />
 
-      {/* Bottom fade */}
       <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-2 h-40 bg-linear-to-t from-background to-transparent" />
 
-      {/* Content */}
-      <div className="relative z-10 mx-auto max-w-5xl px-6 py-32 text-center lg:px-8">
-        {/* Eyebrow badge */}
-                <motion.div
-                  initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5 }}
-                  className="mb-8 inline-flex items-center rounded-full border border-ps-cyan/30 bg-ps-cyan/10 px-4 py-1.5 text-sm text-ps-cyan"
-                >
-                  Growing AI-first software engineering company
-                </motion.div>
+      <div className="relative z-10 mx-auto max-w-4xl px-6 py-32 text-center lg:px-8">
+        <motion.div
+          initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="mb-8 inline-flex items-center rounded-full border border-ps-cyan/30 bg-ps-cyan/10 px-4 py-1.5 text-sm leading-none text-ps-cyan"
+        >
+          Paalstack Studio, Chennai
+        </motion.div>
 
-        {/* Headline */}
         <motion.h1
-          variants={staggerContainer}
+          variants={shouldReduceMotion ? undefined : fadeUp}
           initial={shouldReduceMotion ? false : 'hidden'}
           animate="visible"
-          className="mb-6 text-5xl font-extrabold tracking-tight md:text-6xl lg:text-[78px]"
-          aria-label="Build Software. Automate Operations. Scale Faster."
+          className="mb-6 text-5xl font-extrabold tracking-tight md:text-6xl lg:text-7xl"
         >
-          {headlineLines.map((line, li) => (
-            <span key={li} className="block">
-              {line.map((word, wi) => (
-                <motion.span
-                  key={wi}
-                  variants={shouldReduceMotion ? undefined : wordReveal}
-                  className={`inline-block ${wi > 0 ? 'ml-[0.3em]' : ''} ${
-                    wi === 1 ? 'text-primary' : ''
-                  }`}
-                >
-                  {word}
-                </motion.span>
-              ))}
-            </span>
-          ))}
+          <span className="block">Websites. Automation.</span>
+          <span className="block text-primary">Software that fits.</span>
         </motion.h1>
 
-        {/* Subheadline */}
         <motion.p
           variants={shouldReduceMotion ? undefined : fadeUp}
           initial={shouldReduceMotion ? false : 'hidden'}
           animate="visible"
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 0.2 }}
           className="mx-auto mb-10 max-w-2xl text-lg text-muted-foreground md:text-xl"
         >
-          Growing AI-first software engineering company - expert React/Next.js/TypeScript foundation, actively expanding AI
-          agent & workflow automation capability. Custom web apps, SaaS MVPs, internal tools, and AI automation for
-          startups and small businesses.
+          We build the public site, the internal tools and the AI workflows behind them. One team
+          takes it from first sketch to production.
         </motion.p>
 
-        {/* CTA buttons */}
         <motion.div
           variants={shouldReduceMotion ? undefined : fadeUp}
           initial={shouldReduceMotion ? false : 'hidden'}
           animate="visible"
-          transition={{ delay: 0.75 }}
-          className="mb-16 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
+          transition={{ delay: 0.35 }}
+          className="mb-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
         >
           <Button
             size="lg"
             className="min-w-50 px-8 shadow-[0_0_24px_rgba(0,85,255,0.35)]"
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Get a Free Consultation
+            Start a project
           </Button>
           <Button
             variant="outline"
@@ -101,23 +72,20 @@ export function Hero() {
             className="px-8"
             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            View Our Work →
+            See our work
           </Button>
         </motion.div>
 
-        {/* Trust bar */}
         <motion.div
           variants={shouldReduceMotion ? undefined : fadeUp}
           initial={shouldReduceMotion ? false : 'hidden'}
           animate="visible"
-          transition={{ delay: 0.9 }}
-          className="flex flex-col items-center gap-2"
+          transition={{ delay: 0.45 }}
+          className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-medium text-foreground/75"
         >
-          <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-muted-foreground">
-            <span>✦ Free project estimate</span>
-            <span>✦ 24-hour response</span>
-            <span>✦ No lock-in contracts</span>
-          </div>
+          <span>Free estimate</span>
+          <span>Reply within 24 hours</span>
+          <span>No lock-in contracts</span>
         </motion.div>
       </div>
     </section>

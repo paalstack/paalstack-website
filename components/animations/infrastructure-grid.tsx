@@ -106,10 +106,14 @@ export function InfrastructureGrid() {
   return (
     <svg
       ref={svgRef}
-      className="pointer-events-none absolute inset-0 h-full w-full text-[#cbd3e1] dark:text-[#1a2040]"
+      className="pointer-events-none absolute inset-0 h-full w-full text-[#cbd3e1] opacity-60 dark:text-[#1a2040]"
       viewBox={`0 0 ${width} ${height}`}
       preserveAspectRatio="xMidYMid slice"
       aria-hidden="true"
+      style={{
+        maskImage: 'radial-gradient(ellipse 52% 42% at 50% 45%, transparent 0%, black 75%)',
+        WebkitMaskImage: 'radial-gradient(ellipse 52% 42% at 50% 45%, transparent 0%, black 75%)',
+      }}
     >
       {/* Vertical grid lines */}
       {Array.from({ length: cols + 1 }, (_, i) => (

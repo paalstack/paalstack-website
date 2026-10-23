@@ -28,6 +28,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# reference screenshots of the original app, local only
+/replica/clone-screens/
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)

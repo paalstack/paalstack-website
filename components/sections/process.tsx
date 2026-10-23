@@ -1,32 +1,34 @@
 'use client'
+import Link from 'next/link'
 import { motion, useReducedMotion } from 'framer-motion'
+import { ArrowRight } from 'lucide-react'
 import { fadeUp } from '@/lib/animations'
 
 const steps = [
   {
     number: '01',
-    title: 'Discover',
-    description: 'We deeply understand your goals, users, and technical constraints before writing a single line.',
+    title: 'Scope',
+    description: 'A call, then a written scope with screens, integrations and what is out of scope.',
   },
   {
     number: '02',
     title: 'Design',
-    description: 'Architecture, data models, and UI flows are mapped out to eliminate ambiguity before building.',
+    description: 'Screen flow, data model and permissions written down before code.',
   },
   {
     number: '03',
     title: 'Build',
-    description: 'Clean, type-safe code with CI/CD from day one - iterating rapidly with continuous feedback.',
+    description: 'The core loop ships first, on a real URL, while the rest is built in slices.',
   },
   {
     number: '04',
-    title: 'Automate',
-    description: 'Workflows, notifications, and AI agents are integrated to multiply team productivity.',
+    title: 'Harden',
+    description: 'Access rules, empty states, mobile widths and slow networks checked before launch.',
   },
   {
     number: '05',
-    title: 'Scale',
-    description: 'Infrastructure is right-sized, monitored, and optimized for reliability and growth.',
+    title: 'Launch',
+    description: 'Deploy, hand over the repository and notes, then support within the agreed window.',
   },
 ]
 
@@ -44,10 +46,10 @@ export function Process() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.5 }}
         >
-          <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent">How We Work</p>
-          <h2 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">From Idea to Production</h2>
+          <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent">How we work</p>
+          <h2 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">From problem to working software</h2>
           <p className="mx-auto max-w-xl text-muted-foreground">
-            A structured, transparent process that turns complex requirements into production-grade software.
+            Five steps, each with something you can see or use. No phase where nothing ships for months.
           </p>
         </motion.div>
 
@@ -115,6 +117,16 @@ export function Process() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            href="/process"
+            className="inline-flex items-center gap-2 text-sm font-medium text-accent transition-colors hover:text-accent/80"
+          >
+            See what each step produces
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
       </div>
     </section>

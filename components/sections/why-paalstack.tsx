@@ -26,13 +26,13 @@ const pillars = [
   },
 ]
 
-export function WhyPaalStack() {
+export function WhyPaalstack() {
   return (
     <section id="about" className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16 text-center">
-          <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent">Why PaalStack</p>
+          <p className="mb-3 text-xs font-medium uppercase tracking-widest text-accent">Why Paalstack</p>
           <h2 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">Engineering You Can Rely On</h2>
           <p className="mx-auto max-w-xl text-muted-foreground">
             We combine technical depth with business understanding to deliver software that works - and keeps working.

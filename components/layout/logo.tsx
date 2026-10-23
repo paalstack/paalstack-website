@@ -29,7 +29,7 @@ export function Logo({ variant = 'mark', size = 'md', className, compact = false
     <>
       <Image
         src="/assets/icon/icon-light.svg"
-        alt="PaalStack icon"
+        alt="Paalstack icon"
         width={s.icon}
         height={s.icon}
         className="shrink-0 dark:hidden"
@@ -37,7 +37,7 @@ export function Logo({ variant = 'mark', size = 'md', className, compact = false
       />
       <Image
         src="/assets/icon/icon-dark.svg"
-        alt="PaalStack icon"
+        alt="Paalstack icon"
         width={s.icon}
         height={s.icon}
         className="shrink-0 hidden dark:block"
@@ -54,7 +54,7 @@ export function Logo({ variant = 'mark', size = 'md', className, compact = false
       <>
         <Image
           src="/assets/wordmark/wordmark-light.svg"
-          alt="PaalStack"
+          alt="Paalstack"
           width={wordW}
           height={s.wordH}
           style={{ height: s.wordH, width: 'auto' }}
@@ -63,7 +63,7 @@ export function Logo({ variant = 'mark', size = 'md', className, compact = false
         />
         <Image
           src="/assets/wordmark/wordmark-dark.svg"
-          alt="PaalStack"
+          alt="Paalstack"
           width={wordW}
           height={s.wordH}
           style={{ height: s.wordH, width: 'auto' }}
@@ -89,7 +89,7 @@ export function Logo({ variant = 'mark', size = 'md', className, compact = false
       <span className={cn(compact && 'hidden sm:inline-flex')}>
         <Image
           src="/assets/logo/logo-light.svg"
-          alt="PaalStack"
+          alt="Paalstack"
           width={s.logoW}
           height={s.logoH}
           className="dark:hidden"
@@ -97,7 +97,7 @@ export function Logo({ variant = 'mark', size = 'md', className, compact = false
         />
         <Image
           src="/assets/logo/logo-dark.svg"
-          alt="PaalStack"
+          alt="Paalstack"
           width={s.logoW}
           height={s.logoH}
           className="hidden dark:block"

@@ -1,0 +1,26 @@
+feature,area,priority,original,clone,notes
+Site loads fast on mobile Lighthouse 90+,performance,must,yes,no,target 3G India
+Responsive mobile-first layout,ui,must,yes,yes,
+Hero with clear value prop + CTA,hero,must,yes,yes,Paalstack: websites + AI + custom software
+Technology stack page,technology,should,yes,yes,/technology
+Service list with outcomes,services,must,yes,yes,/services page + home section
+Why-paalstack differentiators,about,must,yes,yes,/about + home section
+Process how-we-work 4 steps,process,must,yes,yes,/process page + home timeline
+Case studies index,projects,must,yes,yes,shadhil CRM live
+Case study detail page,projects,must,yes,yes,problem/solution/outcome
+About + values,about,must,yes,yes,/about page
+Contact via WhatsApp + email (no backend),contact,must,yes,yes,picked simplest
+Theme toggle dark/light,ui,should,yes,yes,
+Testimonials,proof,should,yes,no,need consented quotes
+FAQ section,proof,should,yes,yes,home FAQ
+Final CTA banner,conversion,should,yes,yes,
+Privacy + Terms pages,legal,could,yes,yes,/privacy /terms
+OpenGraph / SEO metadata,seo,should,yes,yes,
+Sitemap + robots,seo,could,yes,yes,
+Analytics (privacy-friendly),analytics,could,yes,no,keep cookie-less
+Blog / insights,marketing,skip,yes,no,v2
+Multi-language (Tamil),i18n,skip,yes,no,v2
+Nexus/Orbit/Forge product pages,products,skip,yes,no,explicitly excluded
+Estate product landing pages,products,skip,yes,no,only when product ships
+Booking / payments,commerce,skip,yes,no,contact only v1
+Book a discovery call via Calendly link,contact,should,yes,yes,external link only no embed

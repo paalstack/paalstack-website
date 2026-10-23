@@ -81,9 +81,9 @@ export default function OGImage() {
               gap: 12,
             }}
           >
-            <span style={{ color: 'rgba(240,244,255,0.6)' }}>Build.</span>
-            <span style={{ color: '#0055FF' }}>Automate.</span>
-            <span style={{ color: 'rgba(240,244,255,0.6)' }}>Scale.</span>
+            <span style={{ color: 'rgba(240,244,255,0.6)' }}>Websites.</span>
+            <span style={{ color: 'rgba(240,244,255,0.6)' }}>Automation.</span>
+            <span style={{ color: '#0055FF' }}>Software that fits.</span>
           </div>
 
           {/* Accent line */}

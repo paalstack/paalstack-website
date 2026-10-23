@@ -7,26 +7,26 @@ import { cn } from '@/lib/utils'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'PaalStack - Build. Automate. Scale.',
+  title: 'Paalstack Studio | Websites, automation and custom software',
   description:
-    'Growing AI-first software engineering company - expert React/Next.js/TypeScript foundation, actively expanding AI agent & workflow automation capability. Custom web apps, SaaS MVPs, internal tools, and AI automation for startups and small businesses.',
-  keywords: ['AI-first software engineering', 'React development', 'Next.js development', 'TypeScript', 'AI agents', 'workflow automation', 'SaaS MVP development', 'custom web apps', 'internal tools'],
-  authors: [{ name: 'PaalStack' }],
-  creator: 'PaalStack',
+    'Paalstack Studio builds websites, AI automation and custom software for growing businesses. Based in Chennai, working with clients across India.',
+  keywords: ['Paalstack', 'custom software Chennai', 'Next.js development', 'AI automation', 'real estate CRM', 'buyer portal', 'web development India'],
+  authors: [{ name: 'Paalstack' }],
+  creator: 'Paalstack',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://paalstack.com',
-    siteName: 'PaalStack',
-    title: 'PaalStack - Build. Automate. Scale.',
+    siteName: 'Paalstack',
+    title: 'Paalstack Studio | Websites, automation and custom software',
     description:
-      'Growing AI-first software engineering company - expert React/Next.js/TypeScript foundation, actively expanding AI agent & workflow automation capability.',
-    images: [{ url: 'https://paalstack.com/opengraph-image', width: 1200, height: 630, alt: 'PaalStack' }],
+      'Websites, AI automation and custom software for growing businesses. One team from first sketch to production.',
+    images: [{ url: 'https://paalstack.com/opengraph-image', width: 1200, height: 630, alt: 'Paalstack' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PaalStack - Build. Automate. Scale.',
-    description: 'Growing AI-first software engineering company - expert React/Next.js/TypeScript foundation, actively expanding AI agent & workflow automation capability.',
+    title: 'Paalstack Studio | Websites, automation and custom software',
+    description: 'Websites, AI automation and custom software for growing businesses.',
     images: ['https://paalstack.com/opengraph-image'],
     creator: '@paalstack',
   },
@@ -114,11 +114,11 @@ export const metadata: Metadata = {
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'PaalStack',
+  name: 'Paalstack',
   url: 'https://paalstack.com',
   logo: 'https://paalstack.com/logo.png',
   description:
-    'Growing AI-first software engineering company - expert React/Next.js/TypeScript foundation, actively expanding AI agent & workflow automation capability. Custom web apps, SaaS MVPs, internal tools, and AI automation for startups and small businesses.',
+    'Paalstack Studio builds websites, AI automation and custom software for growing businesses. Based in Chennai, working with clients across India.',
   email: 'hello@paalstack.com',
   sameAs: ['https://github.com/paalstack', 'https://twitter.com/paalstack'],
 }

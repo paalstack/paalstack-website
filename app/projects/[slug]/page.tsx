@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
+import { Navbar } from '@/components/layout/navbar'
+import { Footer } from '@/components/layout/footer'
 
 export async function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }))
@@ -17,10 +19,10 @@ export async function generateMetadata({
   const project = getProject(slug)
   if (!project) return {}
   return {
-    title: `${project.name} - PaalStack`,
+    title: `${project.name} | Paalstack Studio`,
     description: project.description,
     openGraph: {
-      title: `${project.name} - PaalStack`,
+      title: `${project.name} | Paalstack Studio`,
       description: project.description,
     },
   }
@@ -33,7 +35,9 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   if (!project) notFound()
 
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <Navbar />
+      <main className="min-h-screen bg-background">
       {/* Hero */}
       <div
         className="relative overflow-hidden py-32"
@@ -116,6 +120,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           </Link>
         </div>
       </div>
-    </div>
+      </main>
+      <Footer />
+    </>
   )
 }
