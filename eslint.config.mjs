@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Generated launch-video output (brag skill), never hand-written source:
+    "brag-output*/**",
+    "replica/**",
   ]),
 ]);
 

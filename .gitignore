@@ -45,3 +45,6 @@ yarn-error.log*
 next-env.d.ts
 
 .cache/
+
+# generated launch-video renders, local only
+/brag-output*/
